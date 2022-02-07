@@ -280,7 +280,7 @@ uint8_t USART_u8ReceiveStr(uint8_t* pu8_StrReceive, uint8_t u8_strSize,uint8_t u
 				u8_ReturnTransState = u8_USART_NOT_RECEIVED ;
  				break ;
 			}
-		}while(pu8_StrReceive[u8_indexArr-1] != u8_terminator && (u8_indexArr<u8_strSize)) ;
+		}while(pu8_StrReceive[u8_indexArr-1] != u8_terminator && (u8_indexArr<u8_strSize-1)) ;
 
 		pu8_StrReceive[u8_indexArr-1] = NULL_CHAR ;
 	}
